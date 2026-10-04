@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karang Taruna RT 5 — Wonorejo, Surabaya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--fg:#000;--muted:#f5f5f5;--mfg:#525252;--bl:#e5e5e5;
+--display:"Playfair Display",Georgia,serif;--body:"Source Serif 4",Georgia,serif;--mono:"JetBrains Mono",monospace}
+*{box-sizing:border-box;margin:0;padding:0;border-radius:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.125rem;line-height:1.625;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.015;background-image:repeating-linear-gradient(0deg,transparent,transparent 1px,#000 1px,#000 2px);background-size:100% 4px}
+a{color:inherit}
+.wrap{max-width:72rem;margin:0 auto;padding:0 1.5rem}
+@media(min-width:768px){.wrap{padding:0 2rem}}@media(min-width:1024px){.wrap{padding:0 3rem}}
+section{padding:6rem 0;border-top:4px solid var(--fg);position:relative}
+@media(min-width:768px){section{padding:8rem 0}}
+.mono{font-family:var(--mono);font-size:.75rem;letter-spacing:.1em}
+h1,h2,h3{font-family:var(--display);line-height:1;letter-spacing:-.025em;font-weight:700}
+h2{font-size:clamp(2.5rem,7vw,5.5rem);letter-spacing:-.05em;margin-bottom:3rem}
+.skip{position:absolute;left:-999px;top:0;background:#000;color:#fff;padding:1rem;z-index:99}
+.skip:focus{left:0}
+a:focus-visible,button:focus-visible{outline:3px solid var(--fg);outline-offset:3px}
+/* header */
+header{position:sticky;top:0;background:var(--bg);border-bottom:2px solid var(--fg);z-index:40}
+header .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem 1.5rem;min-height:4rem}
+.logo{font-family:var(--display);font-weight:900;font-size:1.25rem;text-decoration:none;letter-spacing:-.03em}
+nav{display:flex;flex-wrap:wrap}
+nav a{font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:.9rem 1rem;border-bottom:3px solid transparent;min-height:44px;display:flex;align-items:center}
+nav a:hover,nav a:focus-visible{border-bottom-color:var(--fg);outline:none}
+/* hero */
+.hero{border-top:0;padding:4rem 0 5rem;overflow:hidden;background-image:linear-gradient(#00000008 1px,transparent 1px),linear-gradient(90deg,#00000008 1px,transparent 1px);background-size:40px 40px}
+.hero h1{font-size:clamp(3.5rem,17vw,10rem);line-height:.85;letter-spacing:-.05em;font-weight:900;margin:2rem 0}
+.hero h1 em{font-style:italic;font-weight:500;display:block}
+.rule{display:flex;align-items:center;margin:2rem 0}
+.rule i{flex:1;height:8px;background:var(--fg)}.rule b{width:28px;height:28px;border:4px solid var(--fg);background:var(--bg);margin-left:-4px}
+.hero p.lead{font-size:1.25rem;max-width:40rem}
+.btn{display:inline-block;font-family:var(--body);font-weight:600;font-size:.875rem;letter-spacing:.1em;text-transform:uppercase;padding:1rem 2rem;border:2px solid var(--fg);background:var(--fg);color:var(--bg);text-decoration:none;cursor:pointer;transition:none;min-height:44px}
+.btn:hover{background:var(--bg);color:var(--fg)}
+.btn.out{background:transparent;color:var(--fg)}.btn.out:hover{background:var(--fg);color:var(--bg)}
+.hero .btns{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.5rem}
+/* about (inverted) */
+.inv{background:var(--fg);color:var(--bg)}
+.inv::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.03;background-image:repeating-linear-gradient(90deg,transparent,transparent 1px,#fff 1px,#fff 2px);background-size:4px 100%}
+.inv .wrap{position:relative}
+.about-grid{display:grid;gap:4rem}
+@media(min-width:900px){.about-grid{grid-template-columns:1fr 1fr}.about-grid>div+div{border-left:1px solid #fff;padding-left:4rem}}
+.visi{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(1.5rem,3vw,2.25rem);line-height:1.25}
+.misi{list-style:none;counter-reset:m}
+.misi li{counter-increment:m;display:grid;grid-template-columns:3rem 1fr;gap:1rem;padding:1rem 0;border-top:1px solid #fff}
+.misi li::before{content:counter(m);font-family:var(--display);font-size:2rem;line-height:1}
+.addr{margin-top:4rem;border-top:4px solid #fff;padding-top:1.5rem}
+/* struktur */
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1.5rem;margin-bottom:3rem}
+.sec-head h2{margin-bottom:0}
+.org{display:flex;flex-direction:column;align-items:center;position:relative}
+.org::before{content:"";position:absolute;inset:-2rem 0;pointer-events:none;opacity:.015;background-image:repeating-linear-gradient(45deg,transparent,transparent 40px,#000 40px,#000 42px)}
+.card{background:var(--bg);border:1px solid var(--fg);padding:1.25rem;width:100%;max-width:15rem;text-align:center;transition:background-color 100ms,color 100ms;break-inside:avoid;position:relative}
+.card:hover{background:var(--fg);color:var(--bg)}
+.ph{aspect-ratio:1;border:1px solid currentColor;margin-bottom:1rem;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--muted);color:var(--fg);font-family:var(--display);font-size:3.5rem;font-weight:900}
+.ph img{width:100%;height:100%;object-fit:cover;filter:grayscale(1)}
+.card:hover .ph img{filter:none}
+.role{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mfg)}
+.card:hover .role{color:#ccc}
+.card h3{font-size:1.5rem;margin:.25rem 0 1rem}
+.soc{display:flex;border-top:1px solid currentColor}
+.soc a,.soc span{flex:1;font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;padding:.75rem 0 0;text-decoration:none;min-height:44px}
+.soc a+a,.soc span+a,.soc a+span,.soc span+span{border-left:1px solid currentColor}
+.soc a:hover{text-decoration:underline}.soc span{opacity:.35}
+.card.lead{max-width:17rem;border-width:4px}
+.card.sm{max-width:none;padding:1rem}.card.sm h3{font-size:1.2rem;margin-bottom:.75rem}.card.sm .ph{font-size:2.25rem}
+/* connectors */
+.stem{width:2px;height:40px;background:var(--fg)}
+.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;width:100%;position:relative}
+.row3::before{content:"";position:absolute;top:0;left:16.66%;right:16.66%;height:2px;background:var(--fg)}
+.cell{display:flex;flex-direction:column;align-items:center;padding-top:40px;position:relative}
+.cell::before{content:"";position:absolute;top:0;left:50%;width:2px;height:40px;margin-left:-1px;background:var(--fg)}
+.cell.empty::before{display:none}
+.cell.ch::before{height:40px}
+.abus{width:100%;position:relative;padding-top:40px;margin-top:0}
+.abus::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--fg)}
+.agrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));gap:1.25rem;width:100%;margin-top:1.5rem}
+.lbl{font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;border:2px solid var(--fg);background:var(--bg);padding:.4rem 1rem;position:relative;margin-top:-1px}
+.org .abus .lbl{position:absolute;top:-1rem;left:50%;transform:translateX(-50%)}
+@media(max-width:720px){
+ .row3{grid-template-columns:1fr;gap:0}.row3::before{display:none}.cell.empty{display:none}
+ .cell{padding-top:40px}.card{max-width:17rem}
+}
+/* kegiatan */
+.posts{display:grid;gap:0;border:1px solid var(--fg)}
+@media(min-width:768px){.posts{grid-template-columns:repeat(3,1fr)}.post+.post{border-left:1px solid var(--fg)}}
+.post{padding:2rem;display:flex;flex-direction:column;gap:1rem;transition:background-color 100ms,color 100ms;border-top:1px solid var(--fg)}
+.post:first-child{border-top:0}@media(min-width:768px){.post{border-top:0}}
+.post:hover{background:var(--fg);color:var(--bg)}
+.post .img{aspect-ratio:4/3;border:2px solid currentColor;overflow:hidden;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;background-image:linear-gradient(#00000010 1px,transparent 1px),linear-gradient(90deg,#00000010 1px,transparent 1px);background-size:20px 20px;transition:border-width 100ms}
+.post:hover .img{border-width:4px;background-image:none}
+.post .img img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:transform 300ms,filter 300ms}
+.post:hover .img img{transform:scale(1.05);filter:none}
+.post h3{font-size:1.75rem;line-height:1.1}
+.post p{flex:1}
+.post a{font-weight:600;font-size:.875rem;letter-spacing:.1em;text-transform:uppercase}
+/* footer */
+footer{border-top:8px solid var(--fg);padding:4rem 0 2rem}
+.fgrid{display:grid;gap:2.5rem}@media(min-width:768px){.fgrid{grid-template-columns:2fr 1fr 1fr}}
+footer h3{font-size:2rem;margin-bottom:.75rem}
+footer ul{list-style:none}footer li a{text-decoration:none;display:inline-block;padding:.25rem 0}footer li a:hover{text-decoration:underline}
+.copy{border-top:1px solid var(--fg);margin-top:3rem;padding-top:1.5rem;color:var(--mfg)}
+/* print */
+@page{size:A4 landscape;margin:12mm}
+@media print{
+ body::before,header,footer,.no-print,.org::before{display:none!important}
+ main>section:not(#struktur){display:none!important}
+ #struktur{border:0;padding:0}
+ h2{font-size:2.5rem;margin-bottom:1rem}
+ .card{max-width:11rem;padding:.6rem}.card.lead{max-width:12rem}.card h3{font-size:1.1rem;margin-bottom:.4rem}
+ .ph{font-size:1.5rem;margin-bottom:.5rem}.card:hover{background:var(--bg);color:var(--fg)}
+ .card.sm .ph{display:none}.agrid{grid-template-columns:repeat(7,1fr);gap:.5rem}
+ .row3{gap:1rem}.stem,.cell{--x:0}.cell{padding-top:24px}.cell::before,.stem{height:24px}.row3::before{display:block}
+ .abus{padding-top:24px}.org{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#struktur">Lewati ke konten</a>
+<header><div class="wrap">
+ <a class="logo" href="#top" id="logo"></a>
+ <nav id="nav" aria-label="Navigasi utama"></nav>
+</div></header>
+
+<main id="top">
+ <section class="hero" id="beranda"><div class="wrap">
+  <p class="mono" id="hero-meta"></p>
+  <h1 id="hero-title"></h1>
+  <div class="rule"><i></i><b></b></div>
+  <p class="lead" id="hero-desc"></p>
+  <div class="btns">
+   <a class="btn" href="#struktur">Lihat susunan pengurus →</a>
+   <a class="btn out" id="hero-tt" target="_blank" rel="noopener">TikTok kami</a>
+  </div>
+ </div></section>
+
+ <section class="inv" id="tentang"><div class="wrap">
+  <h2>Tentang kami</h2>
+  <div class="about-grid">
+   <div><p class="mono" style="margin-bottom:1.5rem">Visi</p><p class="visi" id="visi"></p></div>
+   <div><p class="mono" style="margin-bottom:1.5rem">Misi</p><ol class="misi" id="misi"></ol></div>
+  </div>
+  <div class="addr"><p class="mono" style="margin-bottom:.5rem">Sekretariat</p><p id="alamat" style="font-size:1.25rem"></p></div>
+ </div></section>
+
+ <section id="struktur"><div class="wrap">
+  <div class="sec-head">
+   <h2>Susunan pengurus</h2>
+   <button class="btn no-print" id="pdf" type="button">Export ke PDF →</button>
+  </div>
+  <div class="org" id="org"></div>
+ </div></section>
+
+ <section id="kegiatan"><div class="wrap">
+  <h2>Kegiatan</h2>
+  <div class="posts" id="posts"></div>
+ </div></section>
+</main>
+
+<footer id="kontak"><div class="wrap">
+ <div class="fgrid">
+  <div><h3 id="f-nama"></h3><p id="f-alamat" style="max-width:28rem"></p></div>
+  <div><p class="mono" style="margin-bottom:.75rem">Halaman</p><ul id="f-nav"></ul></div>
+  <div><p class="mono" style="margin-bottom:.75rem">Sosial media</p><ul id="f-soc"></ul></div>
+ </div>
+ <p class="copy mono" id="copy"></p>
+</div></footer>
+
+<script>
+/* ============================================================
+   DATA — EDIT BAGIAN INI SAJA
+   foto : isi dengan URL / path gambar (kosong = tampil inisial)
+   ig / tiktok : isi username TANPA tanda @ (kosong = tombol nonaktif)
+   ============================================================ */
+const PROFIL = {
+  nama: "Karang Taruna RT 5",
+  singkat: "RT 5",
+  alamat: "Wonorejo 4, RT 5 RW 6, Kelurahan Wonorejo, Kecamatan Tegalsari, Kota Surabaya, Jawa Timur",
+  deskripsi: "Wadah pemuda-pemudi RT 5 Wonorejo untuk berkumpul, berkarya, dan bergerak bersama untuk lingkungan.",
+  tiktok: "karangtaruna06054",
+  tiktokUrl: "https://www.tiktok.com/@karangtaruna06054?_r=1&_t=ZS-9AGP3uXb2r1",
+  instagram: "",
+  tahun: 2026
+};
+
+const VISI = "Menjadi organisasi kepemudaan yang aktif, kreatif, dan peduli, yang menghidupkan kebersamaan warga RT 5 Wonorejo."; // ← ganti
+
+const MISI = [ // ← ganti / tambah
+  "Mempererat kekompakan dan solidaritas antar pemuda RT 5.",
+  "Menyelenggarakan kegiatan sosial, olahraga, seni, dan budaya.",
+  "Mengembangkan kreativitas dan keterampilan anggota.",
+  "Membantu kegiatan warga dan menjaga kebersihan lingkungan."
+];
+
+/* posisi: ketua | wakil_ketua | sekretaris | wakil_sekretaris | bendahara | wakil_bendahara */
+const PENGURUS = [
+  { posisi:"ketua",            jabatan:"Ketua",             nama:"Iqbal",  foto:"", ig:"", tiktok:"" },
+  { posisi:"wakil_ketua",      jabatan:"Wakil Ketua",       nama:"Dadang", foto:"", ig:"", tiktok:"" },
+  { posisi:"sekretaris",       jabatan:"Sekretaris",        nama:"Windah", foto:"", ig:"", tiktok:"" },
+  { posisi:"wakil_sekretaris", jabatan:"Wakil Sekretaris",  nama:"Andin",  foto:"", ig:"", tiktok:"" },
+  { posisi:"bendahara",        jabatan:"Bendahara",         nama:"Adel",   foto:"", ig:"", tiktok:"" },
+  { posisi:"wakil_bendahara",  jabatan:"Wakil Bendahara",   nama:"Monic",  foto:"", ig:"", tiktok:"" }
+];
+
+const ANGGOTA = [
+  { nama:"Januar",  foto:"", ig:"", tiktok:"" },
+  { nama:"Tama",    foto:"", ig:"", tiktok:"" },
+  { nama:"Adit",    foto:"", ig:"", tiktok:"" },
+  { nama:"Felicia", foto:"", ig:"", tiktok:"" },
+  { nama:"Irdin",   foto:"", ig:"", tiktok:"" },
+  { nama:"Pica",    foto:"", ig:"", tiktok:"" },
+  { nama:"Nayla",   foto:"", ig:"", tiktok:"" }
+];
+
+const KEGIATAN = [ // ← contoh, ganti dengan kegiatan asli
+  { judul:"Kerja bakti lingkungan", tanggal:"2026-08-10", deskripsi:"Pemuda RT 5 membersihkan selokan dan area sekitar gang bersama warga.", gambar:"", link:"" },
+  { judul:"Lomba 17 Agustusan",     tanggal:"2026-08-17", deskripsi:"Rangkaian lomba untuk anak-anak dan warga dalam rangka HUT Kemerdekaan RI.", gambar:"", link:"" },
+  { judul:"Rapat rutin pengurus",   tanggal:"2026-09-05", deskripsi:"Evaluasi kegiatan dan perencanaan program bulan berikutnya.", gambar:"", link:"" }
+];
+
+const MENU = [["Beranda","#beranda"],["Tentang","#tentang"],["Pengurus","#struktur"],["Kegiatan","#kegiatan"],["Kontak","#kontak"]];
+
+/* ============================================================
+   RENDER — tidak perlu diubah
+   ============================================================ */
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const tgl = d => new Date(d).toLocaleDateString("id-ID",{day:"numeric",month:"long",year:"numeric"});
+
+function card(p, cls=""){
+  const ph = p.foto ? `<img src="${esc(p.foto)}" alt="Foto ${esc(p.nama)}">` : esc(p.nama.charAt(0));
+  const ig = p.ig ? `<a href="https://instagram.com/${esc(p.ig)}" target="_blank" rel="noopener" aria-label="Instagram ${esc(p.nama)}">IG</a>` : `<span aria-hidden="true">IG</span>`;
+  const tt = p.tiktok ? `<a href="https://tiktok.com/@${esc(p.tiktok)}" target="_blank" rel="noopener" aria-label="TikTok ${esc(p.nama)}">TikTok</a>` : `<span aria-hidden="true">TikTok</span>`;
+  return `<article class="card ${cls}"><div class="ph">${ph}</div>
+    <p class="role">${esc(p.jabatan || "Anggota")}</p><h3>${esc(p.nama)}</h3><div class="soc">${ig}${tt}</div></article>`;
+}
+
+function renderOrg(){
+  const g = k => PENGURUS.find(p => p.posisi === k);
+  const cell = (k, child) => {
+    const p = g(k);
+    return p ? `<div class="cell">${card(p)}</div>` : `<div class="cell empty"></div>`;
+  };
+  $("org").innerHTML = `
+    ${g("ketua") ? card(g("ketua"),"lead") : ""}
+    <div class="stem"></div>
+    <div class="row3">${cell("wakil_ketua")}${cell("sekretaris")}${cell("bendahara")}</div>
+    <div class="row3" style="margin-top:0">
+      <div class="cell empty"></div>
+      ${g("wakil_sekretaris") ? `<div class="cell">${card(g("wakil_sekretaris"))}</div>` : `<div class="cell empty"></div>`}
+      ${g("wakil_bendahara") ? `<div class="cell">${card(g("wakil_bendahara"))}</div>` : `<div class="cell empty"></div>`}
+    </div>
+    <div class="abus"><span class="lbl">Anggota</span>
+      <div class="agrid">${ANGGOTA.map(a => card(a,"sm")).join("")}</div>
+    </div>`;
+  // garis penghubung baris 3 tidak memakai bus horizontal
+  document.querySelectorAll(".row3")[1].style.setProperty("--none","1");
+}
+
+function init(){
+  document.title = PROFIL.nama + " — Wonorejo, Surabaya";
+  $("logo").textContent = PROFIL.nama;
+  $("nav").innerHTML = MENU.map(m => `<a href="${m[1]}">${m[0]}</a>`).join("");
+  $("hero-meta").textContent = "Wonorejo, Tegalsari, Surabaya";
+  $("hero-title").innerHTML = `Karang<br>Taruna<em>${esc(PROFIL.singkat)}</em>`;
+  $("hero-desc").textContent = PROFIL.deskripsi;
+  $("hero-tt").href = PROFIL.tiktokUrl;
+  $("visi").textContent = VISI;
+  $("misi").innerHTML = MISI.map(m => `<li><span>${esc(m)}</span></li>`).join("");
+  $("alamat").textContent = PROFIL.alamat;
+  renderOrg();
+  $("posts").innerHTML = KEGIATAN.map(k => `
+    <article class="post">
+      <div class="img">${k.gambar ? `<img src="${esc(k.gambar)}" alt="${esc(k.judul)}">` : "FOTO KEGIATAN"}</div>
+      <p class="mono">${tgl(k.tanggal)}</p><h3>${esc(k.judul)}</h3><p>${esc(k.deskripsi)}</p>
+      ${k.link ? `<a href="${esc(k.link)}" target="_blank" rel="noopener">Lihat postingan →</a>` : ""}
+    </article>`).join("");
+  $("f-nama").textContent = PROFIL.nama;
+  $("f-alamat").textContent = PROFIL.alamat;
+  $("f-nav").innerHTML = MENU.map(m => `<li><a href="${m[1]}">${m[0]}</a></li>`).join("");
+  const soc = [];
+  if (PROFIL.tiktok) soc.push(`<li><a href="${esc(PROFIL.tiktokUrl)}" target="_blank" rel="noopener">TikTok @${esc(PROFIL.tiktok)}</a></li>`);
+  if (PROFIL.instagram) soc.push(`<li><a href="https://instagram.com/${esc(PROFIL.instagram)}" target="_blank" rel="noopener">Instagram @${esc(PROFIL.instagram)}</a></li>`);
+  $("f-soc").innerHTML = soc.join("");
+  $("copy").textContent = `© ${PROFIL.tahun} ${PROFIL.nama}`;
+  $("pdf").onclick = () => window.print();
+}
+init();
+</script>
+</body>
+</html>
